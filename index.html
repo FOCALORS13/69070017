@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <title>My Profile</title>
+    <style>
+        body {
+            background-color: #480410;
+            color: #f2ebf3; 
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .card {
+            background-color: #3b2424;
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+            display: flex; 
+            gap: 40px; 
+            width: 800px; 
+            max-width: 90%;
+        }
+
+        .profile {
+            flex: 1; 
+            text-align: center; 
+            border-right: 1px solid #414868; 
+            padding-right: 40px;
+        }
+
+        .profile img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%; 
+            border: 4px solid #ff6464; 
+            object-fit: cover; 
+        }
+
+        .profile h1 {
+            color: #dadbe8;
+            font-size: 24px;
+            margin-top: 15px;
+            margin-bottom: 5px;
+        }
+
+        .profile p {
+            color: #913792;
+            font-size: 14px;
+            margin: 5px 0;
+        }
+
+        .profile a {
+            color: #ff6464; 
+            text-decoration: none;
+            font-weight: bold;
+            display: inline-block;
+            margin-top: 15px;
+        }
+
+
+        .todo {
+            flex: 1; 
+        }
+
+        .todo h2 {
+            color: #ff6464; 
+            margin-top: 0;
+            margin-bottom: 20px;
+        }
+
+        #todo-input {
+            width: 75%;
+            background-color: #361a27;
+            color: #ffffff;
+            border: 1px solid #684141;
+            padding: 10px;
+            border-radius: 5px;
+            margin-bottom: 20px;
+            box-sizing: border-box; 
+        }
+
+        #add-btn {
+            width: 20%;
+            background-color: #ff6464;
+            color: #1a1b26;
+            border: none;
+            padding: 10px 0;
+            border-radius: 5px;
+            font-weight: bold;
+            cursor: pointer;
+            margin-left: 2%;
+        }
+
+        #add-btn:hover {
+            background-color: #ff6464; 
+        }
+
+        #todo-list {
+            list-style: none; 
+            padding: 0;
+            margin: 0;
+        }
+
+        #todo-list li {
+            display: flex; 
+            justify-content: space-between; 
+            align-items: center; 
+            padding: 12px 0;
+            border-bottom: solid #ff6464; 
+        }
+
+        #todo-list li button {
+            background-color: transparent;
+            color: #9aa5ce;
+            border: 1px solid #850d0d;
+            padding: 5px 10px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        #todo-list li button:hover {
+            background-color: #ff6464; 
+            color: #ffffff;
+            border-color: #ff6464;
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <div class="profile">   
+            <img src="kurumi.gif" alt="Profile Picture">
+            <h1>Kwanchai Suwanwijit</h1>
+            <p>Student id: 69070017</p>
+            <p>Kurumi is The best Waifu</p>
+            <p>My favorite Game: Rov, Genshin Impact</p>
+            <a href="https://onlearn.it.kmitl.ac.th/user/profile.php?id=4887" target="_blank">Onlearn</a>
+        </div>
+        <div class="todo">
+            <h2>My Todo List</h2>
+            <input type="text" id="todo-input" placeholder="พิมพ์สิ่งที่ต้องทำ...">
+            <button type="button" id="add-btn">เพิ่ม</button>
+            
+            <ul id="todo-list">
+                <li>Play game <button type="button">ลบ</button></li>
+                <li>sleep <button type="button">ลบ</button></li>
+                <li>eat <button type="button">ลบ</button></li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
